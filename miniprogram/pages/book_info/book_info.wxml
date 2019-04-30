@@ -1,0 +1,37 @@
+<view class='book_info'>
+  <view style='padding-bottom:100rpx'>
+    <view style='display:flex'>
+      <view class='imageview'>
+        <image src='{{book.book_img}}'></image>
+      </view>
+      <view class='itemview'>
+        <view class='item'>书名： {{book.book_name}}</view>
+        <view class='item'>作者： {{book.book_author}}</view>
+        <view class='item'><text class='text'>出版社： {{book.book_press}}</text></view>
+        <view class='item'>出版年：{{book.year_publish}}</view>
+        <view class='item'>定价： {{book.book_price}}</view>
+      </view>
+    </view>
+    <view class='line'></view>
+    <view class='introduction'>
+      <view>作者简介：</view> 
+      {{book.intro_author}}
+    </view>
+    <view class='line'></view>
+    <view class='introduction'>
+      <view>内容简介：</view> 
+      {{book.intro_context}}
+    </view>
+    <view class='line'></view>
+    <view>评论：</view>
+    <view class='introduction' wx:for='{{comments}}'>
+    <view class='comment'>{{item.reviewer_name}}:  {{item.comment}}</view>
+    </view>
+  </view>
+
+
+  <view class="release">
+    <textarea class="text" value='{{newcomment}}'placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="false" cursor-spacing="15" auto-height="true" placeholder="评论" bindinput='getComment'></textarea>
+    <view class="submit" bindtap='doComment'>发送</view>
+  </view>
+</view>

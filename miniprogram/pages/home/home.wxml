@@ -1,0 +1,98 @@
+<!--pages/index/index.wxml-->
+<view class='index'>
+  <view>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='true' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}'>
+      <block wx:for='{{imgUrls}}' wx:key='{{index}}'>
+        <swiper-item>
+          <image src='{{item}}' class="slide-image" width='100%' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='search'>
+    <navigator url='/pages/search/search'>
+      <view class='search-text'>
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        搜索
+      </view>
+    </navigator>
+  </view>
+  <view>
+    <view class='book-recommend-text'>
+      每日推荐
+    </view>
+    <view style='display:flex'>
+      <view class='book-item-1'>
+        <navigator url='/pages/book_info/book_info?book_id={{everydaybook[0].book_id}}'>
+          <image class='book-img' src='{{everydaybook[0].book_img}}'></image>
+          {{everydaybook[0].book_name}}
+        </navigator>
+      </view>
+      <view class='book-item-2'>
+        <navigator url='/pages/book_info/book_info?book_id={{everydaybook[1].book_id}}'>
+          <image class='book-img' src='{{everydaybook[1].book_img}}'></image>
+          {{everydaybook[1].book_name}}
+        </navigator>
+      </view>
+      <view class='book-item-2'>
+        <navigator url='/pages/book_info/book_info?book_id={{everydaybook[2].book_id}}'>
+          <image class='book-img' src='{{everydaybook[2].book_img}}'></image>
+          {{everydaybook[2].book_name}}
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view class='book-recommend-text'>
+      精品推荐
+    </view>
+    <view style='display:flex'>
+      <view class='book-item-1'>
+        <navigator url='/pages/book_info/book_info?book_id={{jingpin[0].book_id}}'>
+          <image class='book-img' src='{{jingpin[0].book_img}}'></image>
+          {{jingpin[0].book_name}}
+        </navigator>
+      </view>
+      <view class='book-item-2'>
+        <navigator url='/pages/book_info/book_info?book_id={{jingpin[1].book_id}}'>
+          <image class='book-img' src='{{jingpin[1].book_img}}'></image>
+          {{jingpin[1].book_name}}
+        </navigator>
+      </view>
+      <view class='book-item-2'>
+        <navigator url='/pages/book_info/book_info?book_id={{jingpin[2].book_id}}'>
+          <image class='book-img' src='{{jingpin[2].book_img}}'></image>
+          {{jingpin[2].book_name}}
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view class='book-recommend-text'>
+      新书推荐
+    </view>
+    <view style='display:flex'>
+      <view class='book-item-1'>
+        <navigator url='/pages/book_info/book_info?book_id={{newbook[0].book_id}}'>
+          <image class='book-img' src='{{newbook[0].book_img}}'></image>
+          {{newbook[0].book_name}}
+        </navigator>
+      </view>
+      <view class='book-item-2'>
+        <navigator url='/pages/book_info/book_info?book_id={{newbook[1].book_id}}'>
+          <image class='book-img' src='{{newbook[1].book_img}}'></image>
+          {{newbook[1].book_name}}
+        </navigator>
+      </view>
+      <view class='book-item-2'>
+        <navigator url='/pages/book_info/book_info?book_id={{newbook[2].book_id}}'>
+          <image class='book-img' src='{{newbook[2].book_img}}'></image>
+          {{newbook[2].book_name}}
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+</view>

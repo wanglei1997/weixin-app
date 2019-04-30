@@ -1,0 +1,96 @@
+.book_info {
+  width: 710rpx;
+  margin: 20rpx;
+}
+
+.imageview {
+  width: 270rpx;
+  height: 450rpx;
+}
+
+.imageview image {
+  width: 270rpx;
+  height: 450rpx;
+}
+
+.itemView {
+  width: 440rpx;
+  height: 450rpx;
+}
+
+.item {
+  width: 420rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  background-color: pink;
+}
+
+.text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: clip;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.introduction {
+  width: 710rpx;
+  margin-top: 10rpx;
+  padding: 10rpx;
+}
+
+.line {
+  width: 710rpx;
+  height: 1rpx;
+  border: solid 1rpx black;
+}
+
+.input_null {
+  color: #c9c9c9;
+}
+
+.release {
+  display: flex;
+  align-items: flex-end; /*底部对齐*/
+  justify-content: space-between; /*两端对齐*/
+  box-sizing: border-box;
+  position: fixed;
+  left: 20rpx;
+  bottom: 20rpx;
+  width: 710rpx;
+  padding: 18rpx 0 18rpx 30rpx;
+  background-color: pink;
+  font-size: 28rpx;
+  z-index: 999;
+}
+
+.release .text {
+  width: 604rpx;
+  min-height: 34rpx;
+  max-height: 102rpx; /*最多显示三行*/
+  border-width: 15rpx 20rpx; /*使用padding与预期留白不一致，故使用border*/
+  border-style: solid;
+  border-color: #fff;
+  line-height: 34rpx;
+  font-size: 34rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+
+.release .submit {
+  width: 116rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: black;
+}
+
+.comment{
+  width: 670rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  margin-bottom: 10rpx;
+  border: solid 1px grey;
+}

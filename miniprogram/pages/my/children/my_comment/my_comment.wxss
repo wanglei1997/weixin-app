@@ -1,0 +1,53 @@
+/* miniprogram/pages/my/children/my_comment/my_comment.wxss */
+.my_comment{
+  width: 710rpx;
+  margin: 20rpx
+}
+.title{
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: pink;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 50rpx
+}
+.title image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.item{
+  width: 710rpx;
+  height: 200rpx;
+  margin-top: 10rpx;
+  background-color: pink;
+  display: flex
+}
+.imageview{
+  width: 120rpx;
+  height: 200rpx;
+}
+.imageview image{
+  width: 120rpx;
+  height: 200rpx;
+}
+.commentview{
+  width: 590rpx;
+  height: 200rpx;
+  padding: 10rpx;
+  font-size: 36rpx
+}
+
+.commentview text{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+  font-size: 30rpx;
+}

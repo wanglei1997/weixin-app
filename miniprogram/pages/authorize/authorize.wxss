@@ -1,0 +1,11 @@
+/* miniprogram/pages/authorize/authorize.wxss */
+.auth{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-image: url('https://7761-wanglei-506f3e-1258986735.tcb.qcloud.la/bg.jpg?sign=d42e8b43cbe41e111a93abdfb636a9ba&t=1555313248')
+
+}

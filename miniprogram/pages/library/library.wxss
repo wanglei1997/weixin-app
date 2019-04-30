@@ -1,0 +1,57 @@
+/* miniprogram/pages/library/library.wxss */
+.library{
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+.title{
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: pink;
+  font-size: 50rpx;
+}
+.title image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.itemView{
+  width: 710rpx;
+  height: 400rpx;
+  background-color: pink;
+  margin-top:10rpx;
+  font-size: 16px;
+  display: flex;
+}
+.itemImage{
+  width:220rpx;
+  height: 380rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx
+}
+.itemName, .itemAuthor{
+  width:460rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  background-color: greenyellow
+}
+.itemContext{
+  width:460rpx;
+  height: 240rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  
+}
+.itemContext text{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  align-content: center;
+  font-size: 12px;
+}

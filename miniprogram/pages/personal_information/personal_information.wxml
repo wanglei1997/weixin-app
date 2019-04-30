@@ -1,0 +1,49 @@
+<!--miniprogram/pages/personal_information/personal_information.wxml-->
+<view class='title'>
+我的信息
+</view>
+<view class='personal_information'>
+  <view class='itemView'>
+    <view class='itemName'>
+      昵称：
+    </view>
+    <view class='itemInfo'>
+      <input type='text' value='{{name}}' bindinput='name'></input>
+    </view>
+  </view>
+  <view class='itemView'>
+    <view class='itemName'>
+      年龄：
+    </view>
+    <view class='itemInfo'>
+      <input type='number' value='{{age}}' bindinput='age'></input>
+    </view>
+  </view>
+  <view class='itemView'>
+    <view class='itemName'>
+      性别：
+    </view>
+    <view class='itemInfo'>
+      <input type='text' value='{{sex}}' bindinput='sex'></input>
+    </view>
+  </view>
+  <view class='itemView'>
+    <view class='itemName'>
+      生日：
+    </view>
+    <view class='itemInfo'>
+      <input type='text' value='{{birthday}}' bindinput='birthday'></input>
+    </view>
+  </view>
+  <view class='itemView'>
+    <view class='itemName'>
+      爱好：
+    </view>
+    <view class='itemInfo'>
+      <input type='text' value='{{hobby}}' bindinput='hobby'></input>
+    </view>
+  </view>
+  <view class='button'>
+    <button bindtap='changeinfo'>保存修改</button>
+  </view>
+</view>

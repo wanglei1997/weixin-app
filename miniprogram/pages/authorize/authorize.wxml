@@ -1,0 +1,5 @@
+<view class='auth'>
+<view>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">上传我的头像与昵称</button>
+</view>
+</view>

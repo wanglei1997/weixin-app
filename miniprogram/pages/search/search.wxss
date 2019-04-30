@@ -1,0 +1,74 @@
+/* miniprogram/pages/search/search.wxss */
+.search{
+  width: 710rpx;
+  margin: 20rpx
+}
+.searchText{
+  width: 500rpx;
+  height: 100rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx
+}
+.searchbutton{
+  width: 180rpx;
+  height: 100rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+.searchbutton button{
+ width: 180rpx;
+  height: 100rpx;
+}
+
+.search2{
+  display: flex;
+  background-color: pink;
+  height: 120rpx;
+}
+
+.input-radius{
+  border-radius: 30rpx;
+  width: 500rpx;
+  height: 2.5rem;
+  min-height: 2.5rem;
+  border: solid black 1rpx
+}
+
+.itemView{
+  width: 710rpx;
+  height: 400rpx;
+  background-color: pink;
+  margin-top:10rpx;
+  font-size: 16px;
+  display: flex;
+}
+.itemImage{
+  width:220rpx;
+  height: 380rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx
+}
+.itemName, .itemAuthor{
+  width:460rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  background-color: greenyellow
+}
+.itemContext{
+  width:460rpx;
+  height: 240rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  
+}
+.itemContext text{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  align-content: center;
+  font-size: 12px;
+}

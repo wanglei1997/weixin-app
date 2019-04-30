@@ -1,0 +1,22 @@
+<view class='title'>
+<image src='/images/my_recommend.png'></image>
+我的推荐
+</view>
+<view class='my_recommend' wx:for='{{books}}'>
+  <navigator url='/pages/book_info/book_info?book_id={{item._id}}'>
+    <view class='itemView'>
+      <view>
+        <image src='{{item.book_img}}' class='itemImage'></image>
+      </view>
+      <view>
+        <view class='itemName'>书名: {{item.book_name}}</view>
+        <view class='itemAuthor'>作者： {{item.book_author}}</view>
+
+        <view class='itemContext'>
+          <text>作品简介:    {{item.intro_context}}</text>
+        </view>
+      </view>
+
+    </view>
+  </navigator>
+</view>

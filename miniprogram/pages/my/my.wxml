@@ -1,0 +1,74 @@
+<view class='my'>
+  
+  <view>
+    <navigator class='my_userinfo' url='/pages/personal_information/personal_information'>
+      <view class='imageview'>
+        <image src='{{userInfo.avatarUrl}}'></image>
+      </view>
+      <view>
+        <view class='nickname'>
+          {{userInfo.nickName}}
+        </view>
+        <view class='text'>
+          查看 / 修改个人信息
+        </view>
+      </view>
+    </navigator>
+    <navigator class='my_item'>
+      <view>
+        <image class='itemimage' src='/images/collection.png'>
+        </image>
+      </view>
+      <view class='itemtext'>
+        我的收藏
+      </view>
+    </navigator>
+    <navigator class='my_item' url='/pages/my/children/my_comment/my_comment'>
+      <view>
+        <image class='itemimage' src='/images/comment.png'>
+        </image>
+      </view>
+      <view class='itemtext'>
+        我的书评
+      </view>
+    </navigator>
+    <navigator class='my_item' url='/pages/my/children/my_recommend/my_recommend'>
+      <view>
+        <image class='itemimage' src='/images/my_recommend.png'>
+        </image>
+      </view>
+      <view class='itemtext'>
+        我的推荐
+      </view>
+    </navigator>
+    <view style='width:710rpx;height:50rpx'></view>
+    <navigator class='my_item' url='/pages/recommend/recommend'>
+      <view>
+        <image class='itemimage' src='/images/recommend.png'>
+        </image>
+      </view>
+      <view class='itemtext'>
+        我要推荐
+      </view>
+    </navigator>
+    <navigator class='my_item' url='/pages/my/children/about/about'>
+      <view>
+        <image class='itemimage' src='/images/about.png'>
+        </image>
+      </view>
+      <view class='itemtext'>
+        关于
+      </view>
+    </navigator>
+    <view style='width:710rpx;height:50rpx'></view>
+    <view class='my_item' bindtap='logout'>
+      <view>
+        <image class='itemimage' src='/images/logout.png'>
+        </image>
+      </view>
+      <view class='itemtext'>
+       退出登录
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+/* miniprogram/pages/personal_information/personal_information.wxss */
+
+.personal_information {
+  width: 710rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.title{
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: pink;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 50rpx
+}
+.title image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.itemView {
+  width: 710rpx;
+  height: 100rpx;
+  background-color: pink;
+  margin-top: 10rpx;
+  display: flex;
+  font-size: 14pt;
+}
+
+.itemName {
+  width: 150rpx;
+  margin-left: 10rpx;
+  margin-top: 20rpx
+}
+
+.itemInfo {
+  width: 560rpx;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  text-align: end
+}
+.button{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.button button{
+  border-radius: 20rpx;
+  background-color: rgba(48, 29, 29, 0.438)
+}
+

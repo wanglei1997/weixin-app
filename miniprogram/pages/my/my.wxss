@@ -1,0 +1,57 @@
+/* pages/my/my.wxss */
+.my{
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+.my_userinfo{
+  width: 710rpx;
+  height: 160rpx;
+  background-color: pink;
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+}
+.imageview{
+  width: 160rpx;
+  height: 160rpx;
+}
+.imageview image{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 65rpx;
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+}
+.nickname{
+  width: 300rpx;
+  margin-top:30rpx;
+  margin-left: 30rpx
+}
+.text{
+ width: 300rpx;
+ margin-top:10rpx;
+ margin-left: 30rpx;
+ font-size:30rpx
+}
+
+.my_item{
+  width: 710rpx;
+  height: 100rpx;
+  margin-top: 10rpx;
+  background-color: pink;
+  display: flex
+}
+.itemimage{
+  width:60rpx;
+  height: 60rpx;
+  margin-top:20rpx;
+  margin-left: 20rpx;
+}
+
+.itemtext{
+  width: 300rpx;
+  height: 60rppx;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  font-size:40rpx
+}

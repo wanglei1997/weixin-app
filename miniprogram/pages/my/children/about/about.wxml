@@ -1,0 +1,4 @@
+<!--miniprogram/pages/my/children/about/about.wxml-->
+<view>开发者信息</view>
+<view>组长：王磊</view>
+<view>组员：王涵、韦杰、杨令仪、章雨昂</view>

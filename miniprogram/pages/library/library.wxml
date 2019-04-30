@@ -1,0 +1,24 @@
+<!--miniprogram/pages/library/library.wxml-->
+<view class='title'>
+<image src='/images/book_selected.png'></image>
+书库
+</view>
+<view class='library' wx:for='{{books}}'>
+  <navigator url='/pages/book_info/book_info?book_id={{item._id}}'>
+
+    <view class='itemView'>
+      <view>
+        <image src='{{item.book_img}}' class='itemImage'></image>
+      </view>
+      <view>
+        <view class='itemName'>书名: {{item.book_name}}</view>
+        <view class='itemAuthor'>作者： {{item.book_author}}</view>
+
+        <view class='itemContext'>
+          <text>作品简介:    {{item.intro_context}}</text>
+        </view>
+      </view>
+
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,30 @@
+<view class='search'>
+  <view class='search2'>
+    <view class='searchText'>
+      <input class='input-radius' type='text' bindinput='getText' placeholder='请输入作者名或书名'></input>
+    </view>
+    <view class='searchbutton'>
+      <button bindtap='doSearch'>搜索</button>
+    </view>
+
+  </view>
+  <view wx:if='{{!results.length}}'>no result</view>
+  <view wx:for='{{results}}'>
+    <navigator url='/pages/book_info/book_info?book_id={{item._id}}'>
+      <view class='itemView'>
+        <view>
+          <image src='{{item.book_img}}' class='itemImage'></image>
+        </view>
+        <view>
+          <view class='itemName'>书名: {{item.book_name}}</view>
+          <view class='itemAuthor'>作者： {{item.book_author}}</view>
+
+          <view class='itemContext'>
+            <text>作品简介:    {{item.intro_context}}</text>
+          </view>
+        </view>
+
+      </view>
+    </navigator>
+  </view>
+</view>

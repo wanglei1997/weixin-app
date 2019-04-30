@@ -1,0 +1,19 @@
+<!--miniprogram/pages/my/children/my_comment/my_comment.wxml-->
+<view class='title'>
+<image src='/images/comment.png'></image>
+我的评论
+</view>
+<view class='my_comment' wx:for='{{comments}}'>
+<navigator url='/pages/book_info/book_info?book_id={{item.book_id}}'>
+
+  <view class='item'>
+    <view class='imageview'>
+      <image src='{{item.book_img}}'></image>
+    </view>
+    <view class='commentview'>
+      <view>书名: {{item.book_name}}</view>
+      我的评论：<text>{{item.comment}}</text>
+    </view>
+  </view>
+  </navigator>
+</view>

@@ -1,0 +1,69 @@
+.recommend{
+  width: 710rpx;
+  margin: 20rpx;
+}
+.title{
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: pink;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 50rpx
+}
+.title image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.imageview{
+  width: 270rpx;
+  height:450rpx;
+}
+.imageview image{
+  width: 270rpx;
+  height: 450rpx;
+}
+.itemView{
+  width: 440rpx;
+  height: 450rpx;
+}
+.item{
+  width: 420rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  background-color: pink;
+  display: flex
+}
+.item .text{
+  width: 140rpx;
+  height: 60rpx;
+  padding: 10rpx;
+}
+.item .input{
+  width: 280rpx;
+  height: 60rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx
+}
+.introduction{
+  width: 710rpx;
+  margin-top: 10rpx;
+  padding: 10rpx
+}
+textarea{
+width: 710rpx;
+min-height: 40rpx;
+max-height: 120rpx; 
+border-width: 1rpx; 
+border-style: solid;
+border-color: black;
+line-height: 40rpx;
+font-size: 40rpx;
+background-color: #ffffff;
+border-radius: 4rpx;
+}

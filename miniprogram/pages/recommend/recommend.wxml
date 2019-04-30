@@ -1,0 +1,61 @@
+<!--pages/recommend/recommend.wxml-->
+<view class='title'>
+<image src='/images/recommend.png'></image>
+我要推荐
+</view>
+<view class='recommend'>
+  <view style='display:flex'>
+    <view class='imageview'>
+      <image src='{{book_img}}'></image>
+    </view>
+    <view class='itemview'>
+      <view class='item'>
+        <view class='text'>书名:</view>
+        <view class='input'>
+          <input placeholder='请输入书名' value='{{book_name}}' bindinput='book_name'></input>
+        </view>
+      </view>
+      <view class='item'>
+        <view class='text'>作者:</view>
+        <view class='input'>
+          <input placeholder='请输入作者' value='{{book_author}}' bindinput='book_author'></input>
+        </view>
+      </view>
+      <view class='item'>
+        <view class='text'>出版社:</view>
+        <view class='input'>
+          <input placeholder='请输入出版社' value='{{book_press}}' bindinput='book_press'></input>
+        </view>
+      </view>
+      <view class='item'>
+        <view class='text'>出版年:</view>
+        <view class='input'>
+          <input placeholder='请输入出版年' value='{{year_publish}}' bindinput='year_publish'></input>
+        </view>
+      </view>
+      <view class='item'>
+        <view class='text'>定价:</view>
+        <view class='input'>
+          <input placeholder='请输入定价' value='{{book_price}}' bindinput='book_price'></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='introduction'>
+    <view>作者简介：</view>
+    <textarea auto-height="true" value='{{intro_author}}' bindinput='intro_author' maxlength='-1'></textarea>
+  </view>
+  
+  <view class='line'></view>
+  <view class='introduction'>
+    <view>内容简介：</view>
+    <textarea auto-height="true" value='{{intro_context}}' bindinput='intro_context' maxlength='-1'></textarea>
+  </view>
+  <view>
+    <button bindtap='doUpload'>上传图片</button>
+  </view>
+  <view>
+    <button bindtap='doSubmit'>我要推荐</button>
+  </view>
+</view>
